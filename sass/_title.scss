@@ -1,7 +1,7 @@
 .header {
   @include breakpoint-up(xlarge) {
-    margin-top: 15rem;
-    margin-bottom: 8rem;
+    margin-top: 14rem;
+    margin-bottom: 6rem;
   }
   &__logo {
     display: block;
