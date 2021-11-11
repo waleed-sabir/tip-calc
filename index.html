@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <img src="images/logo.svg" alt="logo" class="header__logo" />
+      </div>
+    </header>
+    <div class="container">
+      <div class="grid__item item1">
+        <section class="bill">
+          <span class="bill__title">Bill</span>
+          <form action="#" class="bill__form">
+            <input type="number" name="bill-form" id="bill-form" required />
+            <label for="bill-form">
+              <img src="images/icon-dollar.svg" alt="dollar sign" />
+            </label>
+          </form>
+        </section>
+
+        <section class="tip">
+          <span class="tip__title">Select Tip %</span>
+          <div class="tip__grid">
+            <button type="button" class="tip__grid-item">5%</button>
+            <button type="button" class="tip__grid-item">10%</button>
+            <button type="button" class="tip__grid-item">15%</button>
+            <button type="button" class="tip__grid-item">25%</button>
+            <button type="button" class="tip__grid-item">50%</button>
+            <input type="number" placeholder="Custom" class="tip__grid-item"></input>
+          </div>
+        </section>
+
+        <section class="people">
+          <span class="people__title">Number of People</span>
+          <span class="people__alert">Can't be zero</span>
+          <form action="#" class="people__form">
+            <input type="number" name="people-form" id="people-form" required />
+            <label for="people-form">
+              <img src="images/icon-person.svg" alt="dollar sign" />
+            </label>
+          </form>
+        </section>
+      </div>
+
+      <div class="grid__item item2">
+        <section class="results">
+          <div class="flex__item item1">
+            <div class="results__amount">
+              <p>Tip Amount <br /><span>/ person</span></p>
+              <h4>$4.27</h4>
+            </div>
+
+            <div class="results__total">
+              <p>Total <br /><span>/ person</span></p>
+              <h4>$32.79</h4>
+            </div>
+          </div>
+
+          <div class="flex__item item2">
+            <div class="results__button">
+              <button type="reset" class="btn">Reset</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+     
+    </div>
+  </body>
+</html>
